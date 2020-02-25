@@ -7,15 +7,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-//@RestController
+@RestController
 public class EmpController {
 
-   /* @Autowired
+    @Autowired
     EmployeeMapper employeeMapper;
 
     @GetMapping("/emp/{id}")
     public Employee getEmpById(@PathVariable("id") Integer id){
+        System.out.println(id+"--------------------");
         return employeeMapper.getEmpById(id);
-    }*/
+    }
 
 }
