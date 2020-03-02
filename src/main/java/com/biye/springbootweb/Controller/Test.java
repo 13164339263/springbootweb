@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -25,7 +27,17 @@ public class Test {
     //直接访问
     @GetMapping("/index")
     public String index(){
-        return "index"; //当浏览器输入/index时，会返回 /templates/home.html页面
+        return "index"; //当浏览器输入/index时，会返回 /templates/index.html页面
     }
 
+
+    private final int a=1;
+    private final List<Integer> b=new ArrayList<Integer>();
+
+
+
+    public void main(String[] args) {
+        //a=3;
+        b.add(1);
+    }
 }
